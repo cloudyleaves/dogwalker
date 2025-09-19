@@ -5,4 +5,21 @@ public class DogWalkCompany
     {
         schedule = new int[24];
     }
+    public String toString ()
+    {
+        String s = "";
+        for (int i = 0; i < schedule.length; i++)
+            s += i + " " + schedule[i] + "\n";
+        return s;
+    }
+    public int addDogs()
+    {
+        Scanner s = new Scanner(System.in);
+        System.out.println("what hour?");
+        int hour = s.nextInt();
+        System.out.println("how many dogs?");
+        int dogs = s.nextInt();
+        schedule[hour] = dogs;
+        return hour;
+    }
 }
