@@ -10,16 +10,14 @@ public class DogWalker
     public int walkDogs(int hour)
     {
         int dogs = company.numAvailableDogs(hour);
-        if (dogs < maxDogs)
-        {
+        if (dogs < maxDogs) {
             company.updateDogs(hour, dogs);
             return dogs;
-        }
-        else
-        {
+        } else {
             company.updateDogs(hour, maxDogs);
             return maxDogs;
         }
+    }
     public int dogWalkShift(int startHour, int endHour)
         {
             int pay = 0;
@@ -35,5 +33,4 @@ public class DogWalker
             startHour++;
             return pay;
         }
-    }
 }
