@@ -1,2 +1,4 @@
-public class WalkDog {
+public class WalkDog
+{
+
 }

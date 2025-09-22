@@ -9,5 +9,8 @@ public class Main
         int hour = c.addDogs();
         System.out.println(c);
         DogWalker w = new DogWalker(4, c);
+        System.out.println(w.walkDogs(hour) + " dogs walked.");
+        System.out.println(c.numAvailableDogs(hour) + " dogs remaining.");
+        hour = c.addDogs();
     }
 }
